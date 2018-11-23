@@ -10,7 +10,8 @@ arrayReduction = (arrayOfNum) => {
         
         additionOfNumbers.push(total);
 
-        uniqueNumbersFromAnArray.splice(0,2,total); // splice(startIndex, endIndex , replaceValue)
+        uniqueNumbersFromAnArray.splice(0,2); // splice(startIndex, endIndex , replaceValue)
+        uniqueNumbersFromAnArray.push(total);
         uniqueNumbersFromAnArray = uniqueNumbersFromAnArray.sort((a,b)=>{return a-b});
     }
 
